@@ -57,7 +57,7 @@ const Home = () => {
                   {f.title}
                 </h3>
 
-                <p className="text-lg font-bold text-blue-600">${f.price}</p>
+                <p className="text-lg font-bold text-black-400">${f.price}</p>
               </li>
             );
           })}

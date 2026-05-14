@@ -18,34 +18,28 @@ const Cart = () => {
           {/* LEFT SIDE */}
           <div className="lg:col-span-2 space-y-5">
             {/* Empty State moved here */}
-          {item.length === 0 && (
-  <div className="relative flex items-center justify-center min-h-[350px]">
+            {item.length === 0 && (
+              <div className="relative flex items-center justify-center min-h-[350px]">
+                {/* Image (rectangular + background) */}
+                <img
+                  src="Kermit.jfif"
+                  alt="empty cart"
+                  className="w-full max-w-md h-64 object-cover rounded-xl shadow-md"
+                />
 
-    {/* Image (rectangular + background) */}
-    <img
-      src="Kermit.jfif"
-      alt="empty cart"
-      className="w-full max-w-md h-64 object-cover rounded-xl shadow-md"
-    />
+                {/* Overlay */}
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 rounded-xl text-white text-center px-4">
+                  <p className="text-xl font-semibold">Your cart is empty</p>
 
-    {/* Overlay */}
-    <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 rounded-xl text-white text-center px-4">
-
-      <p className="text-xl font-semibold">
-        Your cart is empty
-      </p>
-
-      <NavLink
-        to="/Products"
-        className="mt-4 bg-white text-black px-6 py-2 rounded-lg hover:bg-gray-200 transition"
-      >
-        Start Shopping
-      </NavLink>
-
-    </div>
-
-  </div>
-)}
+                  <NavLink
+                    to="/Products"
+                    className="mt-4 bg-white text-black px-6 py-2 rounded-lg hover:bg-gray-200 transition"
+                  >
+                    Start Shopping
+                  </NavLink>
+                </div>
+              </div>
+            )}
 
             {/* Cart Items */}
             {item.map((p, i) => (
