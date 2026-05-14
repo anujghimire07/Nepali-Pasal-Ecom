@@ -16,7 +16,7 @@ const Products = () => {
   }, []);
 
   function addToCart(a) {
-    setitem([...item, a]);
+    setitem((prev)=>[...prev, a]);
 
     setToast("Item added to cart ✓");
 
