@@ -81,7 +81,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm gap-4">
-        <div>&copy; 2025 Shop Style. All Rights Reserved</div>
+        <div>&copy; 2025 Nepali Pasal. All Rights Reserved</div>
 
         <div className="flex gap-6">
           <span className="hover:text-white cursor-pointer">
