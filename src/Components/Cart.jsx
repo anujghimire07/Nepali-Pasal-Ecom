@@ -44,7 +44,7 @@ const Cart = () => {
             {/* Cart Items */}
             {item.map((p, i) => (
               <div
-                key={p.id}
+                
                 className="bg-white rounded-xl shadow-sm border p-5 flex gap-5 hover:shadow-md transition"
               >
                 {/* Image */}
@@ -79,7 +79,7 @@ const Cart = () => {
                 <div className="flex items-start">
                   <button
                     onClick={() => {
-                      setitem((prev) => prev.filter((x, index) => index !== i));
+                      setitem((prev) => prev.filter((_, index) => index !== i));
                     }}
                     className="text-sm bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition"
                   >
